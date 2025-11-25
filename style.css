@@ -9,17 +9,19 @@ body {
     background: #000;
     color: #fff;
 }
+
 .header {
     width: 100%;
     height: 100vh;
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('bg.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
     border-bottom: 0px solid #222;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -28,7 +30,8 @@ nav {
     margin: auto;
     padding: 20px 0;
 }
-.Name{
+
+.Name {
     color: red;
     font-size: 50px;
     font-family: 'Arial Black', Gadget, sans-serif;
@@ -42,7 +45,7 @@ nav {
 .signin-btn {
     border: 0;
     outline: 0;
-    background: #db0001; 
+    background: #db0001;
     color: #fff;
     padding: 7px 17px;
     font-size: 15px;
@@ -61,6 +64,7 @@ nav {
     border-radius: 3px;
     cursor: pointer;
 }
+
 .hero-content {
     position: absolute;
     top: 50%;
@@ -79,7 +83,7 @@ nav {
 
 .hero-content h3 {
     font-weight: 400;
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
     margin-bottom: 15px;
 }
 
@@ -87,6 +91,7 @@ nav {
     font-size: 1.25rem;
     margin-bottom: 20px;
 }
+
 .email-signup {
     display: flex;
     align-items: center;
@@ -121,22 +126,41 @@ nav {
     margin-left: 8px;
 }
 
-div.nav-bottom{
+div.nav-bottom {
     bottom: 30px;
     width: 100%;
     text-align: center;
 }
 
 div.image-container {
-    background-color: #000;
+    background-color: #000000;
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
+    display: flex;
+    gap: 20px;
+    max-height: 250px;
 }
 
-div.scroll-container img{
+div.scroll-container {
     padding: 10px;
     height: 50px;
     display: inline-block;
     cursor: pointer;
+}
+
+.x{
+    max-height: 80px;
+    width: 100%;
+}
+
+
+.image-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.menu{
+    height: 200px;
+    width: 300px;
 }
