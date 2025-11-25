@@ -14,11 +14,11 @@ body {
     height: 100vh;
     background-image: 
         linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-        url('netflix\ bg\ picture.jpg');
+        url('bg.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
-    border-bottom: 8px solid #222;
+    border-bottom: 0px solid #222;
 }
 nav {
     display: flex;
@@ -119,4 +119,24 @@ nav {
     font-weight: bold;
     border-radius: 2px;
     margin-left: 8px;
+}
+
+div.nav-bottom{
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+div.image-container {
+    background-color: #000;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img{
+    padding: 10px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
 }
