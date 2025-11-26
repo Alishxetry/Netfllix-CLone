@@ -132,6 +132,13 @@ div.nav-bottom {
     text-align: center;
 }
 
+.scroll-images{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
 div.image-container {
     background-color: #000000;
     overflow: auto;
@@ -140,6 +147,34 @@ div.image-container {
     display: flex;
     gap: 20px;
     max-height: 250px;
+}
+
+.image-container{
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.image-container img{
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+
+}
+
+.left-btn,
+.right-btn{
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 8px;
 }
 
 div.scroll-container {
@@ -155,8 +190,23 @@ div.scroll-container {
 }
 
 
+
 .image-container::-webkit-scrollbar {
     display: none;
+}
+
+.image-container::-webkit-scrollbar-track{
+    background: #222;
+    border-radius: 4px;
+}
+
+.image-container::-webkit-scrollbar-thumb{
+    background: #555;
+    border-radius: 4px;
+}
+
+.image-container::-webkit-scrollbar-thumb :hover{
+    background: #777;
 }
 
 
