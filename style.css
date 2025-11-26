@@ -173,7 +173,7 @@ div.image-container {
     cursor: pointer;
     border: none;
     background: #333;
-    color: white;
+    color: rgb(172, 172, 172);
     border-radius: 8px;
 }
 
